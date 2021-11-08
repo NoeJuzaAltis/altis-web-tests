@@ -1,0 +1,77 @@
+html,body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+    color: #6C8097;
+}
+header{
+    height: 8vh;
+}
+nav{
+    height: 100%;
+}
+.inlineNav{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.internalBurgerNav{
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+}
+.burgerNav{
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.navEl{
+    height: fit-content;
+}
+.navEl a{
+    text-decoration: none;
+    color: #B3BBCA;
+    font-weight: bolder;
+    transition: color 0.5s;
+}
+.navEl a:hover{
+    color: #D78E25;
+}
+.navimg{
+    height: 75%;
+}
+.navimg a {
+    height: 100%
+}
+.navimg a img{
+    height: 100%;
+}
+.content{
+    height: 82vh;
+}
+footer{
+    height: 10vh;
+}
+@media (max-width: 710px) {
+    .burgerNav{
+        display: flex;
+    }
+    .inlineNav{
+        display: none;
+    }
+    .internalBurgerNav{
+        display: none;
+    }
+}
